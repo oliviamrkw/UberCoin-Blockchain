@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/UBERCoin.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://d3i4yxtz  ktqr9n.cloudfront.net/uber-sites/99c4bc580c8b57b7.ico"
+    />
+    <title>UBERCoin Calculator</title>
+  </head>
+  <body>
+    <header class="dark">
+      <div class="container">
+        <nav>
+          <div>
+            <ul class="nav-links"> <!--Making the navigation bar at the top-left of the website-->
+              <li><a href="index.html" id="Uber_logo">Uber</a></li>
+              <li><a href="#" id="Ride" class="normal_nav">Ride</a></li>
+              <li><a href="#" id="Drive" class="normal_nav">Drive</a></li>
+              <li><a href="#" id="More" class="normal_nav">More</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul id="nav-links" class="nav-links"> <!--Making the navigation bar at the top-right of the website-->
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#" class="nav__cta">Sign up</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <section id="main__cta"> <!--This is where customers would be able to calculate how many UBERCoins they would earn from their trip-->
+      <div class="container"> 
+        <h3 id="cta_header">Calculate the distance of your trip</h3>
+        <style>
+            label {
+              font-size: 1.5rem;  
+              font-weight: 750;
+              color: white;
+            }
+
+            input[type=text], select {
+              width: 100%;
+              padding: 12px 10px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            
+            input[type=submit] {
+              width: 100%;
+              background-color: #4CAF50;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size: 1.25rem;  
+              font-weight: 750;
+              margin-bottom: 2.5rem;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+        </style>
+        <form>
+            <label for="SPoint">Starting Point:</label><br>
+            <input type="text" id="SPoint" name="SPoint"><br>
+            <label for="EPoint">Destination:</label><br>
+            <input type="text" id="EPoint" name="EPoint"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="split">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0604041207225!2d-79.39735202261544!3d43.667713551490166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34baf3dae513%3A0xc98434e11ec5f592!2sRoyal%20Ontario%20Museum!5e0!3m2!1sen!2sca!4v1694999752002!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="infos__section" class="light"> <!--This is where customers would be able to look at their wallets and see how many UBERCoins they have by inputting their Wallet ID-->
+        <div class="container"> 
+            <h3 id="infos_header">Check your current UBERCoins balance</h3>
+            <form>
+                <label id="Wallet"  for="Wallet">Wallet ID:</label><br>
+                <input type="text" id="Wallet" name="Wallet"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <section id="applications__section">
+        <div class="container">
+          <div class="split">
+            <a data-aos="fade-right" href="https://play.google.com/store/apps/details?id=com.ubercab&hl=en_CA&gl=US&pli=1" class="app__card">
+              <span>Uber</span>
+              <p class="app__title">
+                Download the Uber app
+                <br> 
+                and start your UBERCoin journey!
+              </p>
+            </a>
+            <a data-aos="fade-left" href="UBERCoin.html" class="app__card">
+              <span>Uber</span>
+              <p class="app__title">Learn More About UBERCoin!</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
