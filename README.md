@@ -1,7 +1,8 @@
 # UberCoin Blockchain
-Made for the Uber Global Hackathon!
+This GitHub repository contains files for the frontend (website) and backend (python code) of our Uber Global Hackathon submission!
 
-### SUMMARY;
+## Backend
+### SUMMARY:
 This Python code is a prototype of a software that calculates the number of UberCoins earned by a user when taking public transit. It organizes this data by creating a basic blockchain. 
 
 ### FUNCTIONALITY: 
